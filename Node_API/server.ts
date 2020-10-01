@@ -3,7 +3,7 @@ import * as mysql from "mysql";
 import * as cors from "cors";
 const app = express();
 var con = mysql.createConnection({
-  host: "localhost",
+  host: "mysql",
   user: "root",
   password: "demo",
   database: "Demo",

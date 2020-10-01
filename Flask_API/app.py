@@ -2,7 +2,7 @@ from flask import Flask
 import mysql.connector
 
 mydb = mysql.connector.connect(
-    host="localhost",
+    host="mysql",
     user="root",
     password="demo",
     database="Demo"

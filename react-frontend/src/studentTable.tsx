@@ -1,9 +1,9 @@
 import React, { FC, useEffect, useState } from "react";
 const axios = require("axios").default;
-interface StudentTableProps {}
+interface StudentTableProps { }
 
 interface Student {
-  USN: string;
+  usn: string;
   name: string;
 }
 
@@ -23,8 +23,8 @@ const StudentTable: FC<StudentTableProps> = () => {
           <th style={{ border: "1px solid black" }}>Name</th>
         </tr>
         {students.map((student: Student) => (
-          <tr key={student.USN} style={{ border: "1px solid black" }}>
-            <td style={{ border: "1px solid black" }}>{student.USN}</td>
+          <tr key={student.usn} style={{ border: "1px solid black" }}>
+            <td style={{ border: "1px solid black" }}>{student.usn}</td>
             <td style={{ border: "1px solid black" }}>{student.name}</td>
           </tr>
         ))}
